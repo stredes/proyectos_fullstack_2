@@ -1,0 +1,107 @@
+/* Fuente base y reset */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffcc66;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 4px solid #ffaa33;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Secciones */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fffaf2;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #ff6600;
+    border-bottom: 2px solid #ffaa33;
+    padding-bottom: 5px;
+}
+
+section p {
+    line-height: 1.5;
+}
+
+/* Tabla de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    border-radius: 6px;
+}
+
+table img {
+    border-radius: 8px;
+    border: 2px solid #eee;
+    margin-bottom: 8px;
+    transition: transform 0.3s;
+}
+
+table img:hover {
+    transform: scale(1.05);
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffcc66;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 4px solid #ffaa33;
+}
