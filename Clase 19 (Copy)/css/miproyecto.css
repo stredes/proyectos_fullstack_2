@@ -1,0 +1,27 @@
+        .titulo-principal{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+            Arial, sans-serif;
+            color: grey;
+        }
+        
+
+
+body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #693900;
+            margin-left: 25%;
+            margin-right: 25%;
+            font-weight:200;
+            background-color: azure;
+        }
+        
+        footer{
+            position: fixed;
+            left: 0;
+            width: 100%;
+            bottom: 0%;
+            background-color: #ffd5a3;
+            color: #693900;
+            font-size: 20px;
+            text-align: center;
+        }
