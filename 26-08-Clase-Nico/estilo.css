@@ -1,0 +1,13 @@
+.titulo1{
+    color: aqua;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.TextoComun{
+    color: rgb(139, 22, 155);
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+.row1{
+    width: 100%;
+}
