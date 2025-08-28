@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="titulo-principal"> titulo inicial</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, non ipsam praesentium alias minima quo
+        necessitatibus, fugiat magni, quos nobis sapiente ea voluptate. Qui obcaecati, error eaque nam tenetur natus.
+    </p>
+
+    <button onclick="cambiarTitulo()">cambiar texto</button>
+
+    <hr>
+    <label for="numeroA"> ingrese un numero</label>
+    <input type="number" id="numeroA" placeholder="ingrese un numero aqui">
+
+    <label for="numeroB"> ingrese un numero</label>
+    <input type="number" id="numeroB" placeholder="ingrese un numero aqui">
+
+    <button onclick="sumar()">cambiar texto</button>
+    <p id="resultado"> </p>
+
+    <script>
+        var texto = "esto es un texto";
+        console.log(texto);
+
+        function cambiarTitulo(){
+            console.log("dentro de la funcion");
+            document.getElementById("titulo-principal").innerHTML = "prueba exitosa js"
+        }
+        function sumar(){
+            
+            var  numeroA = document.getElementById("numeroA" ).value;
+            var  numeroB = document.getElementById("numeroB" ).value;
+            
+            console.log(numeroA);
+            console.log(numeroB);
+            console.log(numeroA + numeroB);
+
+            numeroAEntero = parseInt(numeroA)
+            numeroBEntero = parseInt(numeroB)
+
+            console.log(numeroAEntero + numeroBEntero);
+
+            document.getElementById("resultado").innerHTML = numeroAEntero + numeroBEntero;
+
+
+
+
+
+           
+        }
+   
+    </script>
+
+
+</body>
+
+</html>

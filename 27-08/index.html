@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase 27-08</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">inmobiliaria san martin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">propiedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">compras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">exit</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container">
+            <div class="row mt-2 mb-2">
+                <div class="col-lg-12">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5eF-8_MkcBUPHxFG7zAT2bINvQs5c3eGOw&s"
+                                    class="d-block w-100" alt="casa 1 altos del raco">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5></h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="data:image/jpeg;base64,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"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i0.wp.com/deplanos.com/wp-content/uploads/2012/09/Casa.jpg?resize=528%2C345&ssl=1"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="container">
+                <div class="row mt-2 mb-2">
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5eF-8_MkcBUPHxFG7zAT2bINvQs5c3eGOw&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">1. Departamento moderno en zona céntrica
+                                    Luminoso departamento de 2 ambientes con balcón, cocina integrada y baño completo.
+                                    Ubicado a metros de avenidas principales y transporte público. Ideal para parejas o
+                                    profesionales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://i0.wp.com/deplanos.com/wp-content/uploads/2012/09/Casa.jpg?resize=528%2C345&ssl=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">2. Casa familiar con jardín en barrio tranquilo
+                                    Amplia casa de 3 dormitorios, 2 baños, living comedor, cocina independiente y
+                                    hermoso jardín con parrilla. Cochera para dos autos. Lista para mudarse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvdaqvFvj6NuzsYZwgD56N7HCUDeEpBt9Ag&s"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">3. Monoambiente ideal inversión o alquiler temporario
+                                    Monoambiente en excelente estado, con kitchenette, baño completo y placard
+                                    empotrado. Edificio con amenities: laundry, SUM y seguridad 24 hs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
