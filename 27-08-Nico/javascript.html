@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo-principal">Titulo inicial</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus iure ducimus neque vel. Tenetur pariatur in ex quis quas, architecto ad atque a commodi, nostrum rerum debitis impedit, qui earum?</p>
+
+    <button onclick="cambiarTitulo()">Cambiar texto</button>
+
+    <hr>
+
+    <label for="numeroA">Ingrese un numero</label>
+    <input type="number"  id="numeroA" placeholder="Ingrese aqui su numero">
+
+    <label for="numeroB">Ingrese un numero</label>
+    <input type="number"  id="numeroB" placeholder="Ingrese aqui su numero">
+
+    <p id="resultado"> Resultado </p>
+
+    <button onclick="sumar()">Sumar</button>
+
+    <script>
+        var texto = "este es un texto";
+        console.log(texto);
+
+        function cambiarTitulo(){
+            console.log("Enté en la función");
+            document.getElementById("titulo-principal").innerHTML = "Prueba exitosa con JS";
+        }
+
+        function sumar(){
+            console.log("Entré a la función de suma");
+            var numeroA = document.getElementById("numeroA").value;
+            var numeroB = document.getElementById("numeroB").value;
+
+            console.log(numeroA);
+            console.log(numeroB);
+
+            console.log(numeroA + numeroB);
+
+            numeroAEntero = parseInt(numeroA);
+            numeroBEntero = parseInt(numeroB);
+
+            console.log(numeroAEntero + numeroBEntero);
+
+            document.getElementById("resultado").innerHTML = numeroAEntero + numeroBEntero;
+
+            if (numeroAEntero == 2){
+                alert("numero par");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos con Javascript</title>
+</head>
+<body>
+    
+    <h1 id="titulo">
+        Titulo original
+    </h1>
+
+    <button onclick= "cambiarTitulo()" >Cambiar titulo</button>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-6">
+
+            <label for="numero1"> Numero 1 </label>
+            <input type="text" id="valor1" placeholder="Ingrese nuemro 1">
+
+        </div>
+        <div class="col-lg-6">
+             <label for="numero1"> Numero 2 </label>
+             <input type="text" id="valor2" placeholder="Ingrese nuemro 2">
+        </div>
+    </div>
+
+
+   
+
+    <!-- <button onclick="obtenerValor()">Obtener valor</button> --> 
+
+
+    <button onclick="Sumar()">Suma</button>
+    
+    
+    <script>
+        console.log("Hola mundo");
+
+        function cambiarTitulo(){
+            console.log("Ingresé a la función");
+            document.getElementById("titulo").innerHTML = "Otro titulo";
+            // El .innerHTML cambia puede cambiar el titulo al id que hace referencia
+            // puede cambiar los <div> que están dentro del id los <p>, etc.
+            console.log("termine la pega");
+        }
+
+        function obtenerValor(){
+            var numero = document.getElementById("valor1").value;
+            console.log(numero);
+
+            var resultado = numero + 10;
+
+            console.log(resultado);
+            // acá concatena en vez de sumar los números, ya que todo lo que viene
+            // de HTML viene en forma de String
+
+            //Por lo que hay que parsearlo a Int con parseInt
+
+
+            resultado = parseInt(numero) + 10;
+            console.log(resultado)
+        }
+
+
+        function Sumar(){
+            var numero1 = document.getElementById("valor1").value;
+            var numero2 = document.getElementById("valor2").value;
+
+            var resultado = parseInt(numero1) + parseInt(numero2);
+            console.log(resultado);
+            
+            document.getElementById("titulo").innerHTML = "Suricatas";
+        }
+
+    </script>
+
+</body>
+</html>
+
